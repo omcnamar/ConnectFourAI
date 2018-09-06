@@ -43,14 +43,14 @@ public class Test {
                 width = input.nextInt();
                 System.out.println("Enter connect number");
                 connect = input.nextInt();
-                System.out.println("Enter who will play first: Enter x or y");
+                System.out.println("Enter who will play first: Enter O or X");
                 //loop to make sure there is player x and y only
                 do {
                     currentPlayer = input.next().charAt(0);
-                    if(currentPlayer == 'x' || currentPlayer == 'y'){
+                    if(currentPlayer == 'O' || currentPlayer == 'X'){
                        break;
                     }else{
-                        System.out.println("Enter x or y only:");
+                        System.out.println("Enter O or X only:");
                     }
                     input.nextLine();//clear the buffer
                 }while(true);
@@ -178,10 +178,10 @@ public class Test {
     }
 
     public static void switchPlayer(){
-        if(currentPlayer == 'x'){
-            currentPlayer = 'y';
+        if(currentPlayer == 'O'){
+            currentPlayer = 'X';
         }else{
-            currentPlayer = 'x';
+            currentPlayer = 'O';
         }
     }
 }
